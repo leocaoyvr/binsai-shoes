@@ -2,6 +2,8 @@
 var gulp         = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var concat       = require('gulp-concat');
+var data         = require('gulp-data');
+var fs           = require('fs');
 var imageMin     = require('gulp-imagemin');
 var plumber      = require('gulp-plumber');
 var pug          = require('gulp-pug');
@@ -38,13 +40,27 @@ gulp.task('javascript', function() {
     .pipe(gulp.dest('./dist/js/'))
 });
 
-// Compile pug
-gulp.task('pug', function() {
+// Compile PUG, English
+gulp.task('viewEN', function() {
   gulp.src('./dev/pug/**/*.pug')
     .pipe(plumber())
+    .pipe(data(function() {
+      return JSON.parse(fs.readFileSync('./dev/lang/en.json'));
+    }))
     .pipe(pug())
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/en'))
 });
+
+// Compile PUG, Chinese
+// gulp.task('viewCN', function() {
+//   gulp.src('./dev/pug/**/*.pug')
+//     .pipe(plumber())
+//     .pipe(data(function() {
+//       return JSON.parse(fs.readFileSync('./dev/lang/cn.json'));
+//     }))
+//     .pipe(pug())
+//     .pipe(gulp.dest('./dist/cn'))
+// });
 
 // Browser Sync Dev
 gulp.task('browserSync', function() {
@@ -53,13 +69,17 @@ gulp.task('browserSync', function() {
     port: 8080,
     ghostMode: false,
     server: {
-      baseDir: ['dist']
+      baseDir: 'dist',
+      index: '/en/index.html'
     }
   });
 
-  gulp.watch(['./dev/pug/**/*.pug'], ['pug']);
+  // gulp.watch(['./dev/pug/**/*.pug'], ['viewEN', 'viewCN']);
+  gulp.watch(['./dev/pug/**/*.pug'], ['viewEN']);
   gulp.watch(['./dev/scss/**/*.scss'], ['scss']);
   gulp.watch(['./dev/js/**/*.js'], ['javascript']);
+  // gulp.watch(['./dev/lang/*.json'], ['viewEN', 'viewCN']);
+  gulp.watch(['./dev/lang/*.json'], ['viewEN']);
 
   gulp.watch(['./dist/js/**/*.js']).on('change', browserSync.reload);
   gulp.watch(['./dist/**/*.html']).on('change', browserSync.reload);
@@ -68,12 +88,14 @@ gulp.task('browserSync', function() {
 // Defaullt, comple
 
 gulp.task('default', function(done) {
-  runSequence('scss', 'pug', 'javascript', 'images');
+  // runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'images');
+  runSequence('scss', 'viewEN', 'javascript', 'images');
 });
 
 // Serve Dev
 
 gulp.task('serve', function(done) {
-  runSequence('scss', 'pug', 'javascript', 'browserSync', function() {
+  // runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'browserSync', function() {
+  runSequence('scss', 'viewEN', 'javascript', 'browserSync', function() {
   });
 });

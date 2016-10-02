@@ -1,0 +1,25 @@
+{
+  "lan": "en",
+
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "cgLan": {
+      "name": "中文",
+      "url": "cn"
+    }
+  },
+
+  "home": {
+    "header": {
+      "title": "Home Page Title",
+      "subtitle": "Home Page Subtitle"
+    },
+    "body": {
+
+    },
+    "footer": {
+
+    }
+  }
+}
