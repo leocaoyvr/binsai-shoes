@@ -1,6 +1,51 @@
 @charset "UTF-8";
 
-body {
-    font-family: Georgia, sans-serif;
-    background-color: #ddd;
-}
+/*
+/* Style
+/* ========================= */
+
+/* Vendors
+/* css files from external libs
+/* ------------------------- */
+
+@import 'vend/normalize';
+
+/* Base
+/* the boilerplate stuff
+/* ------------------------- */
+
+@import 'base/reset';
+@import 'base/color';
+@import 'base/type';
+
+/* Utilities
+/* tools and helpers used globally
+/* ------------------------- */
+
+@import 'util/mixins';
+@import 'util/animate';
+
+/* Modules
+/* small components
+/* ------------------------- */
+
+@import 'mod/navbar';
+
+/* Layout
+/* ------------------------- */
+
+@import 'layout/header';
+@import 'layout/footer';
+
+/* Pages
+/* page-specific styles
+/* ------------------------- */
+
+@import 'page/index';
+@import 'page/about';
+
+/* Atom
+/* atomic css
+/* ------------------------- */
+
+@import 'util/atom';

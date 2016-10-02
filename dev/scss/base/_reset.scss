@@ -1,0 +1,49 @@
+/*
+/* Reset
+/* ========================= */
+
+h1, h2, h3, h4, h5, p, a, div, ul, ol, input, textarea, form, button, hr {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+textarea:focus,
+input:focus,
+select:focus,
+button:focus {
+    // remove browser default - focus blue outline
+    outline: 0;
+}
+
+ul { list-style: none; }
+
+img { display: block; }
+
+// links
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// input
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    // remove webkit innput number arrows
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    // remove firefox input number arrows
+    -moz-appearance:textfield;
+}
+
+// textarea
+
+textarea {
+    // allow only vertical resize
+    resize: vertical;
+}

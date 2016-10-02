@@ -1,0 +1,22 @@
+/*
+/* Color
+/* ========================= */
+
+/* Base Colors
+/* ------------------------- */
+
+$color-red   : hsl(356,  93%, 59%); /* #f8333f */
+$color-green : hsl(159,  73%, 43%); /* #1EBF87 */
+$color-blue  : hsl(212, 100%, 58%); /* #298dff */
+$color-pink  : hsl(332, 100%, 58%); /* #ff298d */
+$color-yellow: hsl( 38, 100%, 58%); /* #ffb029 */
+
+$color-heading   : hsl(  0, 0%,  20%); /* #333    */
+$color-body-text : hsl(226, 8%,  30%); /* #474a54 */
+$color-minor-text: hsl(  0, 0%,  50%); /* #808080 */
+
+/* Atom Colors
+/* ------------------------- */
+
+.cWhite       { color: #fff; }
+.cBlack       { color: #000; }
