@@ -48,7 +48,9 @@ gulp.task('viewEN', function() {
       return JSON.parse(fs.readFileSync('./dev/lang/en.json'));
     }))
     .pipe(pug())
-    .pipe(gulp.dest('./dist/en'))
+    .pipe(gulp.dest('./dist/en'));
+
+  browserSync.reload();
 });
 
 // Compile PUG, Chinese
@@ -59,7 +61,8 @@ gulp.task('viewEN', function() {
 //       return JSON.parse(fs.readFileSync('./dev/lang/cn.json'));
 //     }))
 //     .pipe(pug())
-//     .pipe(gulp.dest('./dist/cn'))
+//     .pipe(gulp.dest('./dist/cn'));
+//   browserSync.reload();
 // });
 
 // Browser Sync Dev
@@ -82,7 +85,7 @@ gulp.task('browserSync', function() {
   gulp.watch(['./dev/lang/*.json'], ['viewEN']);
 
   gulp.watch(['./dist/js/**/*.js']).on('change', browserSync.reload);
-  gulp.watch(['./dist/**/*.html']).on('change', browserSync.reload);
+  // gulp.watch(['./dist/**/*.html']).on('change', browserSync.reload);
 });
 
 // Defaullt, comple
