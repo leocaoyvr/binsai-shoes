@@ -20,6 +20,13 @@ gulp.task('images', function () {
     .pipe(gulp.dest('./dist/img/'))
 });
 
+// Favicon
+gulp.task('favicon', function () {
+  return gulp.src('./dev/img/**/favicon.ico')
+    .pipe((imageMin({ progressive: true, interlaced: true })))
+    .pipe(gulp.dest('./dist'))
+});
+
 // SCSS
 gulp.task('scss', function() {
   gulp.src('./dev/scss/**/*.scss')
@@ -49,21 +56,8 @@ gulp.task('viewEN', function() {
     }))
     .pipe(pug())
     .pipe(gulp.dest('./dist/en'));
-
-  browserSync.reload();
 });
 
-// Compile PUG, Chinese
-// gulp.task('viewCN', function() {
-//   gulp.src('./dev/pug/**/*.pug')
-//     .pipe(plumber())
-//     .pipe(data(function() {
-//       return JSON.parse(fs.readFileSync('./dev/lang/cn.json'));
-//     }))
-//     .pipe(pug())
-//     .pipe(gulp.dest('./dist/cn'));
-//   browserSync.reload();
-// });
 
 // Browser Sync Dev
 gulp.task('browserSync', function() {
@@ -77,16 +71,25 @@ gulp.task('browserSync', function() {
     }
   });
 
-  // gulp.watch(['./dev/pug/**/*.pug'], ['viewEN', 'viewCN']);
-  gulp.watch(['./dev/pug/**/*.pug'], ['viewEN']);
-  gulp.watch(['./dev/img/**/*'], ['images']);
-  gulp.watch(['./dev/scss/**/*.scss'], ['scss']);
-  gulp.watch(['./dev/js/**/*.js'], ['javascript']);
-  // gulp.watch(['./dev/lang/*.json'], ['viewEN', 'viewCN']);
-  gulp.watch(['./dev/lang/*.json'], ['viewEN']);
+  var reloadBrowser = function() {
+    browserSync.reload();
+  };
 
-  gulp.watch(['./dist/js/**/*.js']).on('change', browserSync.reload);
-  // gulp.watch(['./dist/**/*.html']).on('change', browserSync.reload);
+  gulp.watch(['./dev/pug/**/*.pug', './dev/lang/*.json']).on('change', function() {
+    runSequence('viewEN');
+  });
+
+  gulp.watch(['./dist/**/*.html']).on('change', reloadBrowser);
+
+  gulp.watch(['./dev/img/**/*'], function() {
+    runSequence('images', reloadBrowser);
+  });
+
+  gulp.watch(['./dev/scss/**/*.scss'], ['scss']);
+
+  gulp.watch(['./dev/js/**/*.js'], function() {
+    runSequence('javascript', reloadBrowser);
+  });
 });
 
 // Defaullt, comple
@@ -100,6 +103,6 @@ gulp.task('default', function(done) {
 
 gulp.task('serve', function(done) {
   // runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'browserSync', function() {
-  runSequence('scss', 'viewEN', 'javascript', 'images', 'browserSync', function() {
+  runSequence('scss', 'viewEN', 'javascript', 'images', 'favicon', 'browserSync', function() {
   });
 });
