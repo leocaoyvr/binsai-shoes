@@ -1,5 +1,8 @@
 {
   "main": "gulpfile.js",
+  "dependencies": {
+    "blazy": "^1.6.3"
+  },
   "devDependencies": {
     "browser-sync": "^2.8.0",
     "fs": "0.0.1-security",

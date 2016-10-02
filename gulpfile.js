@@ -15,7 +15,7 @@ var runSequence  = require('run-sequence');
 
 // Optimize images
 gulp.task('images', function () {
-  return gulp.src('./dev/img/*')
+  return gulp.src('./dev/img/**/*')
     .pipe((imageMin({ progressive: true, interlaced: true })))
     .pipe(gulp.dest('./dist/img/'))
 });
@@ -33,7 +33,7 @@ gulp.task('scss', function() {
 
 // Minify JS
 gulp.task('javascript', function() {
-  return gulp.src(['./dev/js/*.js'])
+  return gulp.src(['./node_modules/blazy/blazy.min.js', './dev/js/*.js'])
     .pipe(plumber())
     .pipe(uglify())
     .pipe(concat('scripts.js'))
@@ -79,6 +79,7 @@ gulp.task('browserSync', function() {
 
   // gulp.watch(['./dev/pug/**/*.pug'], ['viewEN', 'viewCN']);
   gulp.watch(['./dev/pug/**/*.pug'], ['viewEN']);
+  gulp.watch(['./dev/img/**/*'], ['images']);
   gulp.watch(['./dev/scss/**/*.scss'], ['scss']);
   gulp.watch(['./dev/js/**/*.js'], ['javascript']);
   // gulp.watch(['./dev/lang/*.json'], ['viewEN', 'viewCN']);
@@ -99,6 +100,6 @@ gulp.task('default', function(done) {
 
 gulp.task('serve', function(done) {
   // runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'browserSync', function() {
-  runSequence('scss', 'viewEN', 'javascript', 'browserSync', function() {
+  runSequence('scss', 'viewEN', 'javascript', 'images', 'browserSync', function() {
   });
 });
