@@ -12,6 +12,9 @@
 /* ------------------------- */
 
 @import 'vend/normalize';
+@import 'vend/lightgallery';
+@import 'vend/lg-transitions';
+@import 'vend/lg-fb-comment-box';
 
 /* Base
 /* the boilerplate stuff
@@ -33,6 +36,7 @@
 /* ------------------------- */
 
 @import 'mod/nav';
+@import 'mod/pro-gallery';
 
 /* Layout
 /* ------------------------- */

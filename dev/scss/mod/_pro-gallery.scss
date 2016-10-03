@@ -1,0 +1,45 @@
+/*
+/* Product Gallery
+/* ========================= */
+
+.pro-gallery {
+    ul {
+        font-size: 0;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+
+    li {
+        display: inline-block;
+        width: 345px;
+        height: 300px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+
+        &:nth-child(4n + 4) { margin-right: 0; }
+
+        &:hover {
+            cursor: pointer;
+
+
+            img {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+                opacity: .85;
+            }
+        }
+
+
+
+        img {
+            width: 100%;
+            transition: transform 0.15s ease;
+        }
+    }
+
+
+}

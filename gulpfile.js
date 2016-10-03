@@ -16,7 +16,7 @@ var runSequence  = require('run-sequence');
 // Optimize images
 gulp.task('images', function () {
   return gulp.src('./dev/img/**/*')
-    .pipe((imageMin({ progressive: true, interlaced: true })))
+    // .pipe((imageMin({ progressive: true, interlaced: true })))
     .pipe(gulp.dest('./dist/img/'))
 });
 
@@ -46,7 +46,12 @@ gulp.task('scss', function() {
 
 // Minify JS
 gulp.task('javascript', function() {
-  return gulp.src(['./node_modules/blazy/blazy.min.js', './dev/js/*.js'])
+  return gulp.src([
+    './node_modules/blazy/blazy.min.js',
+    './dev/js/jquery.js',
+    './dev/js/lightgallery.js',
+    './dev/js/lg-thumbnail.js',
+    './dev/js/scripts.js'])
     .pipe(plumber())
     .pipe(uglify())
     .pipe(concat('scripts.js'))
