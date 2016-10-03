@@ -1,25 +1,25 @@
 {
-  "lan": "cn",
+    "lan": "cn",
 
-  "nav": {
-    "home": "主页",
-    "about": "关于",
-    "cgLan": {
-      "name": "English",
-      "url": "en"
-    }
-  },
-
-  "home": {
-    "header": {
-      "title": "主页标题",
-      "subtitle": "主页副标题"
+    "nav": {
+        "home": "主页",
+        "about": "关于",
+        "cgLan": {
+            "name": "English",
+            "url": "en"
+        }
     },
-    "body": {
 
-    },
-    "footer": {
+    "home": {
+        "header": {
+            "title": "主页标题",
+            "subtitle": "主页副标题"
+        },
+        "body": {
 
+        },
+        "footer": {
+
+        }
     }
-  }
 }

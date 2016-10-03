@@ -1,1 +1,3 @@
-// custom scripts
+/*
+/* Base Javascript
+/* ========================= */

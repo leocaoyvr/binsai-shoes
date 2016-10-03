@@ -1,25 +1,32 @@
 {
-  "lan": "en",
+    "lan": "en",
+    "title": "Binsai Shoes",
 
-  "nav": {
-    "home": "Home",
-    "about": "About",
-    "cgLan": {
-      "name": "中文",
-      "url": "cn"
-    }
-  },
-
-  "home": {
-    "header": {
-      "title": "Home Page Title",
-      "subtitle": "Home Page Subtitle"
+    "nav": {
+        "about": "About Us",
+        "product": "Product",
+        "contact": "Contact Us",
+        "cgLan": {
+            "name": "中文",
+            "url": "cn"
+        }
     },
-    "body": {
-
-    },
-    "footer": {
-
+    "index": {
+        "header": {
+            "title": "Binsai Shoes"
+        },
+        "body": {
+            "slogan": "Pretty Shoes Make You Go Further"
+        }
     }
-  }
+
+
+
+
+
+
+
+
+
+
 }

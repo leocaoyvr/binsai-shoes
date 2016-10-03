@@ -1,18 +1,12 @@
-doctype html
-html
-  head
-    link(rel='stylesheet', href='/css/style.css')
-    script(src='/js/scripts.js')
+extends layout/default.pug
 
-  body
-    include mod/nav.pug
+block head
+    title= index.header.title
 
-    h1= home.header.title
-    h2= home.header.subtitle
+block content
+    div.hero
+        h1= index.body.slogan
 
-    p
-        input(name="hi and there")
-        input(name="hi and there")
-        input(name="hi and there")
+
 
 

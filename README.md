@@ -1,2 +1,18 @@
 #   Staic Site Boilerplate with Pug Sass Gulp
-static-site-boilerplate
+
+##  Page Structure
+
+```
+
+body
+    wrapper
+        header
+            header-logo
+            nav
+
+    main
+        hero
+
+
+
+```

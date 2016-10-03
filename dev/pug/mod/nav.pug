@@ -1,10 +1,18 @@
-ul
-    li
-        a(href= "/" + lan + "/" + "index.html")
-            p= nav.home
-    li
-        a(href= "/" + lan + "/" +"about.html")
-            p= nav.about
-    li
-        a(href= "/" + nav.cgLan.url + "/" +"about.html")
-            Home= nav.cgLan.name
+div.nav
+    ul
+        li
+            a(href= "/" + lan + "/" +"about.html")
+                t= nav.about
+
+        li
+            a(href= "/" + lan + "/" +"product.html")
+                t= nav.product
+
+        li
+            a(href= "/" + lan + "/" +"contact.html")
+                t= nav.contact
+
+
+        //- li
+        //-     a(href= "/" + nav.cgLan.url + "/" +"about.html")
+        //-         Home= nav.cgLan.name

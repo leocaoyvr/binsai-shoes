@@ -1,8 +1,26 @@
 doctype html
 html
     head
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+
         link(rel='stylesheet', href='/css/style.css')
         script(src='/js/scripts.js')
 
+        block head
+
     body
-        block content
+        div.wrapper
+            div.header
+                img.header-logo(
+                    src="/img/logo-binsai-shoes-630x64.png"
+                    alt="Binsai Shoes logo"
+                    width="315"
+                    height="32")
+                include ../mod/nav.pug
+
+            div.main
+                block content
+
+            div.footer
+                p &copy; 2016 Binsaishoes. All Rights Reserved. Website Terms and Conditions | Privacy Policy
+

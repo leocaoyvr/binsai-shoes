@@ -27,6 +27,12 @@ gulp.task('favicon', function () {
     .pipe(gulp.dest('./dist'))
 });
 
+// Font
+gulp.task('font', function () {
+  return gulp.src('./dev/font/*')
+    .pipe(gulp.dest('./dist/font/'))
+});
+
 // SCSS
 gulp.task('scss', function() {
   gulp.src('./dev/scss/**/*.scss')
@@ -55,9 +61,8 @@ gulp.task('viewEN', function() {
       return JSON.parse(fs.readFileSync('./dev/lang/en.json'));
     }))
     .pipe(pug())
-    .pipe(gulp.dest('./dist/en'));
+    .pipe(gulp.dest('./dist/en/'));
 });
-
 
 // Browser Sync Dev
 gulp.task('browserSync', function() {
@@ -85,6 +90,10 @@ gulp.task('browserSync', function() {
     runSequence('images', reloadBrowser);
   });
 
+   gulp.watch(['./dev/font/*'], function() {
+    runSequence('font', reloadBrowser);
+  });
+
   gulp.watch(['./dev/scss/**/*.scss'], ['scss']);
 
   gulp.watch(['./dev/js/**/*.js'], function() {
@@ -95,14 +104,13 @@ gulp.task('browserSync', function() {
 // Defaullt, comple
 
 gulp.task('default', function(done) {
-  // runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'images');
-  runSequence('scss', 'viewEN', 'javascript', 'images');
+  runSequence('scss', 'viewEN', 'javascript', 'images', 'favicon', 'font');
 });
 
 // Serve Dev
 
 gulp.task('serve', function(done) {
   // runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'browserSync', function() {
-  runSequence('scss', 'viewEN', 'javascript', 'images', 'favicon', 'browserSync', function() {
+  runSequence('scss', 'viewEN', 'javascript', 'images', 'favicon', 'font', 'browserSync', function() {
   });
 });
