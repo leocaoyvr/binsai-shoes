@@ -1,11 +1,18 @@
 extends layout/default.pug
 
+
 block head
     title= index.header.title
 
+    - var pageClass = "index"
+
 block content
-    div.hero
-        h1= index.body.slogan
+    div.index-hero
+        div.index-hero-container
+            h1(class="index-hero-text")
+                span= index.body.slogan_line1
+                br
+                span= index.body.slogan_line2
 
 
 

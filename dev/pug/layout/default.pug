@@ -8,19 +8,13 @@ html
 
         block head
 
-    body
+    body.default(class=pageClass)
         div.wrapper
             div.header
-                img.header-logo(
-                    src="/img/logo-binsai-shoes-630x64.png"
-                    alt="Binsai Shoes logo"
-                    width="315"
-                    height="32")
-                include ../mod/nav.pug
+                include ../layout/header.pug
 
             div.main
                 block content
 
             div.footer
-                p &copy; 2016 Binsaishoes. All Rights Reserved. Website Terms and Conditions | Privacy Policy
-
+                include ../layout/footer.pug

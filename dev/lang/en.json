@@ -16,7 +16,8 @@
             "title": "Binsai Shoes"
         },
         "body": {
-            "slogan": "Pretty Shoes Make You Go Further"
+            "slogan_line1": "Pretty Shoes Make",
+            "slogan_line2": "You Go Further"
         }
     }
 

@@ -32,13 +32,15 @@
 /* small components
 /* ------------------------- */
 
-@import 'mod/navbar';
+@import 'mod/nav';
 
 /* Layout
 /* ------------------------- */
 
 @import 'layout/header';
 @import 'layout/footer';
+
+@import 'layout/default';
 
 /* Pages
 /* page-specific styles
