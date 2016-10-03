@@ -57,11 +57,6 @@
 /* Base
 /* ------------------------- */
 
-
-
-
-
-
 body {
     font-family: "Raleway", Helvetica, Arial,
                  "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
@@ -84,19 +79,11 @@ h1, .h1 {
     font-weight: 400;
     line-height: 1.1;}
 
-h2, .h2 {
-    font-size: 28px;
-    line-height: 1.1;
-    font-weight: 400;
-}
 
-h3, .h3 {
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 400;
-}
+/* Tltle
+/* ------------------------- */
 
-.small-text {
-    font-size: 12px;
-    line-height: 1.5;
+.title {
+    font-weight: 300;
+    text-transform: uppercase;
 }

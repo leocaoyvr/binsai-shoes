@@ -1,8 +1,8 @@
 {
     "lan": "en",
     "title": "Binsai Shoes",
-
     "nav": {
+        "home": "Home",
         "about": "About Us",
         "product": "Product",
         "contact": "Contact Us",
@@ -12,15 +12,45 @@
         }
     },
     "index": {
-        "header": {
+        "head": {
             "title": "Binsai Shoes"
         },
-        "body": {
-            "slogan_line1": "Pretty Shoes Make",
-            "slogan_line2": "You Go Further"
+        "main": {
+            "slogan_l1":
+            "Pretty Shoes Make",
+            "slogan_l2": "You Go Further"
         }
+    },
+    "contact": {
+        "head": {
+            "title": "Contact Us | Binsai Shoes"
+        },
+        "main": {
+            "title": "Contact Us",
+            "addr_l1": "ADDRESS: NO. 22 JINDA ROAD, QIANHUA INDUSTRIAL ZONE,",
+            "addr_l2": "XINQIAO, OUHAI DISTRICT, WENZHOU, CHINA.",
+            "tel": "TEL: (+86) 0577-88428709",
+            "email": "Email:info@binsaishoes.com",
+            "web": "Web:www.binsaishoes.com"
+        }
+    },
+    "product": {
+        "head": {
+            "title": "Product | Binsai Shoes"
+        },
+        // "main": {
+        //     "title": "About Development",
+        //     "dev_details" :
+        //         "During the period of development，we put more enphasis on
+        //         interaction with customers in the meantime of creating new
+        //         styles by ourselves. To our minds，only through intimate
+        //         interaction can we creat styles much more to the taste to
+        //         customers themselves，thus can make the cooperation more
+        //         smoothly and sustainably. If you have good ideas on developing
+        //         shoes,do not hesitate to let us know. We can discuss with each
+        //         other to make collections most suitable to you."
+        // }
     }
-
 
 
 

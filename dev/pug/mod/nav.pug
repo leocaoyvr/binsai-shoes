@@ -3,16 +3,17 @@
 div.nav
     ul
         li
-            a(href= "/" + lan + "/" +"about.html").linear
-                t= nav.about
-
+            a(href= "/" + lan + "/" + "index.html")
+                span= nav.home
         li
-            a(href= "/" + lan + "/" +"product.html")
-                t= nav.product
-
+            a(href= "/" + lan + "/" + "product.html")
+                span= nav.product
         li
-            a(href= "/" + lan + "/" +"contact.html")
-                t= nav.contact
+            a(href= "/" + lan + "/" + "about.html")
+                span= nav.about
+        li
+            a(href= "/" + lan + "/" + "contact.html")
+                span= nav.contact
 
 
         //- li

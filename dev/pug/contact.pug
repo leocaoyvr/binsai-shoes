@@ -1,0 +1,18 @@
+extends layout/default.pug
+
+block head
+    title= contact.head.title
+
+    - var pageClass = "contact"
+
+block content
+    h1.title= contact.main.title
+
+    div.contact-box
+        ul
+            li= contact.main.addr_l1
+            li= contact.main.addr_l2
+            li= contact.main.tel
+            li= contact.main.email
+            li= contact.main.web
+
