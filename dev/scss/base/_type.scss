@@ -86,4 +86,25 @@ h1, .h1 {
 .title {
     font-weight: 300;
     text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        background: $color-brand-black;
+        height: 1px;
+        width: 100%;
+        bottom: -7px;
+    }
+}
+
+/* Text
+/* ------------------------- */
+
+.text {
+    font-family: Quicksand;
+    font-weight: 400;
+    line-height: 30px;
 }

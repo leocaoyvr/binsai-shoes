@@ -2,23 +2,16 @@
 /* Contact Us
 /* ========================= */
 
+.contact .nav-contact { background-color: $color-brand-pink; }
+
 .contact .title {
-    display: inline-block;
-    position: relative;
     margin-top: 100px;
     margin-bottom: 60px;
     margin-left: 150px;
 
     &:after {
-        position: absolute;
-        content: '';
-        display: block;
-        background: $color-brand-black;
-        height: 1px;
-        width: 100%;
         max-width: 200px;
-        right: 0;
-        bottom: -7px;
+        right: 2px;
     }
 }
 
