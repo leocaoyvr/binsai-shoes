@@ -5,22 +5,66 @@
 /* Hero
 /* ------------------------- */
 
-
 .index-hero {
-    // background: #f5f6fb url(../img/hero-home-1-1600x746.jpg) center center no-repeat;
     background-size: cover;
     height: calc(100vw / 1600 * 750);
     max-height: 750px;
-    // overflow: hidden;
+
+    @include breakpoint(1.5) { height: 300px; }
 }
 
 .index-hero-container {}
 
+.index-hero .index-hero-item {
+    width: 100vw!important;
+    overflow: hidden!important;
+}
+
 .index-hero-text {
     position: absolute;
-    // display: none;
     text-align: center;
-    // margin: 0;
     right: 6%;
     top: 24%;
+    z-index: 1;
+
+    @include breakpoint(2) {
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(calc(-50% - 10px));
+        background: rgba(255, 255, 255, .7);
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .5em;
+    }
+
+    @include breakpoint(1.5) {
+        font-size: 8vw;
+        width: calc(100vw - 1.5em);
+    }
+
+    @include breakpoint(1) {
+        padding: 1em .5em;
+        font-size: 9vw;
+    }
+}
+
+.index-hero .index-hero-img {
+    @include breakpoint(1.5) {
+        height: 300px;
+        width: auto;
+        display: block;
+        max-width: none;
+        transform: translateX(-50%);
+        margin-left: 50vw;
+    }
+}
+
+/* Footer
+/* ------------------------- */
+
+.index .footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
