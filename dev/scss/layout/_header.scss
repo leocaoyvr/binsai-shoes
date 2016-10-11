@@ -14,9 +14,16 @@
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 
     &:hover {
         opacity: .75;
         transition: opacity .3s linear;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
     }
 }

@@ -33,7 +33,7 @@
     @if $ratio == 8 {
         @media (max-width: 1600px) { @content ; }
     }
-    @else if $ratio == 4 {
+    @else if $ratio == 3 {
         @media (max-width: 1200px) { @content ; }
     }
     @else if $ratio == 2 {
@@ -44,5 +44,8 @@
     }
     @else if $ratio == 1 {
         @media (max-width: 400px)  { @content ; }
+    }
+    @else if $ratio == 0.9 {
+        @media (max-width: 360px)  { @content ; }
     }
 }

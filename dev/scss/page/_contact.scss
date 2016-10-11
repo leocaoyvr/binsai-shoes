@@ -47,7 +47,7 @@
         margin-right: 1em;
     }
 
-    @include breakpoint(4) {
+    @include breakpoint(3) {
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -61,7 +61,16 @@
     }
 
     @include breakpoint(1) {
+        padding-top: 50px;
+        padding-bottom: 50px;
         margin-left: 8px;
         margin-right: 8px;
+        font-size: 20px;
+    }
+
+    @include breakpoint(0.9) {
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }

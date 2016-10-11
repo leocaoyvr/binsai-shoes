@@ -9,6 +9,7 @@
 /* ------------------------- */
 
 .text-card {
+    overflow: hidden;
     position: relative;
 
     .text {
@@ -17,7 +18,41 @@
         padding: 100px 80px;
         background-color: #fff;
 
-        .title { white-space: nowrap; }
+         @include breakpoint(2) {
+            padding-left: 10%;
+            padding-right: 10%;
+         }
+
+         @include breakpoint(1.5) {
+            padding-left: 6%;
+            padding-right: 6%;
+         }
+
+         @include breakpoint(1) {
+            padding-left: 8px;
+            padding-right: 8px;
+         }
+
+        .title {
+            @media (min-width: 800px) {
+                white-space: nowrap;
+            }
+
+            @include breakpoint(2) {
+                font-size: 40px;
+                margin-bottom: 60px;
+
+                &:after {
+                    left: 7px;
+                    width: 240px;
+                }
+
+                .left-half {
+                    margin-right: .25em;
+                    display: inline-block;
+                }
+            }
+        }
     }
 
     .img {
@@ -26,7 +61,6 @@
         img { width: 100%; }
     }
 
-    @include clearfix;
 }
 
 
@@ -40,32 +74,34 @@
         position: absolute;
 
         .title {
-            position: relative;
-            left: -329px;
-            margin-bottom: 90px;
-
-            &:after { display: none; }
-
-            .left-half {
-                display: inline-block;
-                margin-right: 10px;
-                color: #fff;
-            }
-
-            .right-half {
-                display: inline-block;
-                margin-left: 5px;
+            @media (min-width: 800px) {
                 position: relative;
+                left: -329px;
+                margin-bottom: 90px;
 
-                &:after {
-                    position: absolute;
-                    content: '';
-                    display: block;
-                    background: $color-brand-black;
-                    height: 1px;
-                    width: 160px;
-                    margin-left: -5px;
-                    bottom: -7px;
+                &:after { display: none; }
+
+                .left-half {
+                    display: inline-block;
+                    margin-right: 10px;
+                    color: #fff;
+                }
+
+                .right-half {
+                    display: inline-block;
+                    margin-left: 5px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        background: $color-brand-black;
+                        height: 1px;
+                        width: 160px;
+                        margin-left: -5px;
+                        bottom: -7px;
+                    }
                 }
             }
         }
@@ -80,6 +116,24 @@
             bottom center
             no-repeat;
         background-size: cover;
+
+        @include breakpoint(3) {
+            height: calc(750px + (600px - 50vw) * 1.2);
+        }
+    }
+
+    @include breakpoint(2) {
+        .text {
+            width: 100%;
+            position: initial;
+            padding-top: 80px;
+        }
+
+        .img {
+            width: 100%;
+            height: calc(100vw / 1000 * 746);
+        }
+
     }
 }
 
@@ -95,36 +149,38 @@
         padding-top: 230px;
 
         .title {
-            position: absolute;
-            left: 50%;
-            top: 100px;
-            transform: translate(-50%, 0);
+            @media (min-width: 800px) {
+                position: absolute;
+                left: 50%;
+                top: 100px;
+                transform: translate(-50%, 0);
 
-            &:after { display: none; }
+                &:after { display: none; }
 
-            .left-half {
-                text-align: right;
-                width: 260px;
-                display: inline-block;
-                margin-right: 10px;
+                .left-half {
+                    text-align: right;
+                    width: 260px;
+                    display: inline-block;
+                    margin-right: 10px;
 
-                &:after {
-                    position: absolute;
-                    content: '';
-                    display: block;
-                    background: $color-brand-black;
-                    height: 1px;
-                    width: 102px;
-                    left: 168px;
-                    bottom: -7px;
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        background: $color-brand-black;
+                        height: 1px;
+                        width: 102px;
+                        left: 168px;
+                        bottom: -7px;
+                    }
                 }
-            }
 
-            .right-half {
-                width: 260px;
-                display: inline-block;
-                margin-left: 10px;
-                color: #fff;
+                .right-half {
+                    width: 260px;
+                    display: inline-block;
+                    margin-left: 10px;
+                    color: #fff;
+                }
             }
         }
 
@@ -144,18 +200,54 @@
             no-repeat;
         background-size: cover;
 
+        @include breakpoint(3) {
+            height: calc(1000px + (600px - 50vw) * 1.6);
+        }
+
+        // text on picture
+        .text-on-pic {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 55px;
+            line-height: 1.15;
+            max-width: 480px;
+            padding-left: .25em;
+            padding-right: .25em;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 280px;
+
+            @include breakpoint(3) {
+                margin-top: calc(320px + (600px - 50vw) * 1.2);
+            }
+            // @include breakpoint(2) { font-size: 40px; }
+        }
     }
 
-    // text on picture
-    .img .text-on-pic {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 55px;
-        line-height: 1.15;
-        width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 280px;
-    }
 
+    @include breakpoint(2) {
+        .img {
+            width: 100%;
+            height: calc(100vw / 1000 * 746);
+            float: none;
+            display: table;
+
+            .text-on-pic {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+
+                @include breakpoint(1.5) { font-size: 8vw; }
+                @include breakpoint(1) { font-size: 9vw; }
+            }
+        }
+
+        .text {
+            width: 100%;
+            position: initial;
+            padding-top: 80px;
+        }
+
+        .mt3d5em { margin-top: 2em; }
+    }
 }
