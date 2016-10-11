@@ -44,7 +44,10 @@
 
 .mt05em       { margin-top: .5em; }
 .mt1em        { margin-top: 1em; }
+.mt1d5em      { margin-top: 1.5em; }
 .mt2em        { margin-top: 2em; }
+.mt3em        { margin-top: 3em; }
+.mt3d5em      { margin-top: 3.5em; }
 
 .mb0          { margin-bottom: 0; }
 
@@ -119,3 +122,4 @@
 /* ------------------------- */
 
 .ov-hide      { overflow: hidden; }
+.clearfix     { @include clearfix; }
