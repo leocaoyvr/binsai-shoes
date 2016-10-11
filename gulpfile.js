@@ -35,7 +35,7 @@ gulp.task('font', function () {
 
 // SCSS
 gulp.task('scss', function() {
-  gulp.src('./dev/scss/**/*.scss')
+  gulp.src('./dev/scss/style.scss')
   .pipe(sourcemaps.init())
   .pipe(scss({outputStyle: 'compressed'}).on('error', scss.logError))
   .pipe(autoprefixer({ browsers: [ 'last 2 versions' ] }))
@@ -47,8 +47,9 @@ gulp.task('scss', function() {
 // Minify JS
 gulp.task('javascript', function() {
   return gulp.src([
-    './node_modules/blazy/blazy.min.js',
     './dev/js/jquery.js',
+    './dev/js/jquery.touchSwipe.js',
+    './dev/js/bpHS.js',
     './dev/js/lightgallery.js',
     './dev/js/lg-thumbnail.js',
     './dev/js/scripts.js'])

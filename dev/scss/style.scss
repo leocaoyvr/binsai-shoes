@@ -11,7 +11,14 @@
 /* css files from external libs
 /* ------------------------- */
 
+// Normalize CSS
 @import 'vend/normalize';
+
+// jQuery Hero Slider
+@import 'vend/bpHS';
+@import 'vend/bpHS-custom';
+
+// Light Gallery
 @import 'vend/lightgallery';
 @import 'vend/lg-transitions';
 @import 'vend/lg-fb-comment-box';

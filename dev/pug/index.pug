@@ -6,13 +6,20 @@ block head
     - var pageClass = "index"
 
 block content
-    div.index-hero
-        div.index-hero-container
-            h1(class="index-hero-text")
-                span= index.main.slogan_l1
-                br
-                span= index.main.slogan_l2
-
+    div#js-heroSlider.bp-hs.index-hero
+        div.bp-hs_inner.index-hero-container
+            div.bp-hs_inner__item(data-transform="scale")
+                h1(class="index-hero-text")
+                    span= index.main.slogan_l1
+                    br
+                    span= index.main.slogan_l2
+                img(src="../img/hero-home-1-1600x750.jpg")
+            div.bp-hs_inner__item(data-transform="scale")
+                img(src="../img/hero-home-2-1600x750.jpg")
+            div.bp-hs_inner__item(data-transform="scale")
+                img(src="../img/hero-home-3-1600x750.jpg")
+            div.bp-hs_inner__item(data-transform="scale")
+                img(src="../img/hero-home-4-1600x750.jpg")
 
 
 

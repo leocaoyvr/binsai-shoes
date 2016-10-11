@@ -7,19 +7,20 @@
 
 
 .index-hero {
-    background: #f5f6fb url(../img/hero-home-1-1600x746.jpg) center center no-repeat;
+    // background: #f5f6fb url(../img/hero-home-1-1600x746.jpg) center center no-repeat;
     background-size: cover;
-    height: calc(100vw / 1600 * 746);
-    overflow: hidden;
+    height: calc(100vw / 1600 * 750);
+    max-height: 750px;
+    // overflow: hidden;
 }
 
-.index-hero-container {
-    position: relative;
-    top: 26%;
-    right: -29%;
-}
+.index-hero-container {}
 
 .index-hero-text {
+    position: absolute;
+    // display: none;
     text-align: center;
-    margin: 0;
+    // margin: 0;
+    right: 6%;
+    top: 24%;
 }
