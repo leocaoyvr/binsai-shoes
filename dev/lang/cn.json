@@ -7,8 +7,8 @@
         "product": "产品",
         "contact": "联系我们",
         "cgLan": {
-            "name": "中文",
-            "url": "cn"
+            "name": "English",
+            "url": "en"
         }
     },
     "footer": {
