@@ -33,7 +33,7 @@
         top: 50%;
         transform: translateY(calc(-50% - 10px));
         background: rgba(255, 255, 255, .7);
-        max-width: 460px;
+        max-width: 480px;
         margin-left: auto;
         margin-right: auto;
         padding: .5em;
@@ -45,7 +45,7 @@
     }
 
     @include breakpoint(1) {
-        padding: 1em .5em;
+        padding: 1em .2em;
         font-size: 9vw;
     }
 }

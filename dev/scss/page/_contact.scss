@@ -59,4 +59,9 @@
 
         li { margin-bottom: .5em; }
     }
+
+    @include breakpoint(1) {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }

@@ -8,19 +8,17 @@
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
-
-
+        text-align: center;
     }
 
     li {
         display: inline-block;
-        width: 345px;
+        width: 340px;
+        margin-left: 10px;
+        margin-right: 10px;
         height: 300px;
-        margin-right: 20px;
         margin-bottom: 20px;
         overflow: hidden;
-
-        &:nth-child(4n + 4) { margin-right: 0; }
 
         &:hover {
             cursor: pointer;
@@ -33,13 +31,22 @@
             }
         }
 
-
-
         img {
             width: 100%;
             transition: transform 0.15s ease;
         }
+
+
+        @include breakpoint(2) {
+            margin-left: 1%;
+            margin-right: 1%;
+            margin-bottom: 10px;
+            width: 48%;
+        }
+
     }
+}
 
-
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+    border-color: saturate($color-brand-pink, 10%);
 }
