@@ -11,13 +11,15 @@
             "url": "cn"
         }
     },
+    "footer": {
+        "brand": "2016 Binsaishoes. All Rights Reserved."
+    },
     "index": {
         "head": {
             "title": "Binsai Shoes"
         },
         "main": {
-            "slogan_l1":
-            "Pretty Shoes Make",
+            "slogan_l1": "Pretty Shoes Make",
             "slogan_l2": "You Go Further"
         }
     },
@@ -72,13 +74,4 @@
             "web": "Web: www.binsaishoes.com"
         }
     }
-
-
-
-
-
-
-
-
-
 }

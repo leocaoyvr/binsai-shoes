@@ -57,9 +57,14 @@
 /* Base
 /* ------------------------- */
 
+$font-family-raleway:   "Raleway", Helvetica, Arial,
+                        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+
+$font-family-quicksand:  "Quicksand", Helvetica, Arial,
+                        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+
 body {
-    font-family: "Raleway", Helvetica, Arial,
-                 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-family: $font-family-raleway;
     font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
@@ -76,7 +81,6 @@ body {
 
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
-    font-family: "Raleway";
     font-weight: 400;
 }
 
@@ -118,7 +122,7 @@ h2, .h2 {
 /* ------------------------- */
 
 .text {
-    font-family: Quicksand;
+    font-family: $font-family-quicksand;
     font-weight: 400;
     line-height: 30px;
 }

@@ -70,6 +70,17 @@ gulp.task('viewEN', function() {
     .pipe(gulp.dest('./dist/en/'));
 });
 
+// Compile PUG, Chinese
+gulp.task('viewCN', function() {
+  gulp.src('./dev/pug/**/*.pug')
+    .pipe(plumber())
+    .pipe(data(function() {
+      return JSON.parse(fs.readFileSync('./dev/lang/cn.json'));
+    }))
+    .pipe(pug())
+    .pipe(gulp.dest('./dist/cn/'));
+});
+
 // Browser Sync Dev
 gulp.task('browserSync', function() {
   browserSync.init({
@@ -87,7 +98,7 @@ gulp.task('browserSync', function() {
   };
 
   gulp.watch(['./dev/pug/**/*.pug', './dev/lang/*.json']).on('change', function() {
-    runSequence('viewEN');
+    runSequence('viewEN', 'viewCN');
   });
 
   gulp.watch(['./dist/**/*.html']).on('change', reloadBrowser);
@@ -110,13 +121,12 @@ gulp.task('browserSync', function() {
 // Defaullt, comple
 
 gulp.task('default', function(done) {
-  runSequence('scss', 'viewEN', 'javascript', 'images', 'favicon', 'font');
+  runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'images', 'favicon', 'font');
 });
 
 // Serve Dev
 
 gulp.task('serve', function(done) {
-  // runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'browserSync', function() {
-  runSequence('scss', 'viewEN', 'javascript', 'images', 'favicon', 'font', 'browserSync', function() {
+  runSequence('scss', 'viewEN', 'viewCN', 'javascript', 'images', 'favicon', 'font', 'browserSync', function() {
   });
 });

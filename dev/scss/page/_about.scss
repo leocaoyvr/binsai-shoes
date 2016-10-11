@@ -79,6 +79,8 @@
                 left: -329px;
                 margin-bottom: 90px;
 
+                @at-root .cn & { left: -186px; }
+
                 &:after { display: none; }
 
                 .left-half {
