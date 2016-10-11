@@ -5,6 +5,7 @@
 .header {
     border-top: 8px solid $color-brand-black;
     margin-top: 12px;
+    position: relative;
 }
 
 .header-logo {
@@ -25,5 +26,27 @@
     img {
         width: 100%;
         height: auto;
+    }
+}
+
+/* Language Swtich
+/* ------------------------- */
+
+.lan-swtich {
+    position: absolute;
+    bottom: 50px;
+    padding-right: 1em;
+    width: 100%;
+    max-width: 1600px;
+    text-align: right;
+    left: 0;
+    right: 0;
+}
+
+.lan-swtich-link {
+    color: $color-brand-black;
+
+    @include breakpoint(1) {
+        font-size: 14px;
     }
 }
