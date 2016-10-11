@@ -13,6 +13,20 @@
         max-width: 200px;
         right: 2px;
     }
+
+    @include breakpoint(2) {
+        font-size: 40px;
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-align: center;
+
+        &:after {
+            left: 50%;
+            margin-left: -100px;
+        }
+    }
 }
 
 .contact-box {
@@ -26,11 +40,23 @@
     margin-left: 80px;
     margin-right: 80px;
 
-
     ul {
         list-style: none;
         text-align: center;
         margin-left: 1em;
         margin-right: 1em;
+    }
+
+    @include breakpoint(4) {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    @include breakpoint(2) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 24px;
+
+        li { margin-bottom: .5em; }
     }
 }
