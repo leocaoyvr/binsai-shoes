@@ -39,7 +39,14 @@
         &:hover { background-color: $color-brand-pink; }
 
         @include breakpoint(0.9) {
-            font-size: 13px;
+            @at-root .en & {
+                font-size: 11px;
+                letter-spacing: -.15em;
+            }
+
+            @at-root .cn & {
+                font-size: 13px;
+            }
         }
     }
 }
