@@ -36,10 +36,6 @@
             left: 7px;
             width: 240px;
         }
-
-         @include breakpoint(2) {
-            font-size: 40px;
-         }
     }
 
     @include breakpoint(2) {

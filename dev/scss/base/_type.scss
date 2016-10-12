@@ -102,6 +102,8 @@ h2, .h2 {
 /* ------------------------- */
 
 .title {
+    @import 'util/mixins';
+
     font-weight: 300;
     text-transform: uppercase;
     display: inline-block;
@@ -116,6 +118,8 @@ h2, .h2 {
         width: 100%;
         bottom: -7px;
     }
+
+    @include breakpoint(2) { font-size: 38px; }
 }
 
 /* Text
