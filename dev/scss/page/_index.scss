@@ -20,13 +20,16 @@
 //     overflow: hidden!important;
 // }
 
-.index-hero-item { overflow: hidden; }
+.index-hero-item {
+    position: relative;
+    overflow: hidden;
+}
 
 .index-hero-text {
     position: absolute;
     text-align: center;
     right: 6%;
-    top: 24%;
+    top: 26%;
     z-index: 1;
 
     @include breakpoint(2) {
