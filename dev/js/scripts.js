@@ -5,7 +5,7 @@
 // Homepage Hero Slider
 $(function() {
   $('.index-hero').unslider({
-    autoplay: false,
+    autoplay: true,
     arrows: false,
   });
 });
