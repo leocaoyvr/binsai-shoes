@@ -48,8 +48,7 @@ gulp.task('scss', function() {
 gulp.task('javascript', function() {
   return gulp.src([
     './dev/js/jquery.js',
-    './dev/js/jquery.touchSwipe.js',
-    './dev/js/bpHS.js',
+    './dev/js/unslider.js',
     './dev/js/lightgallery.js',
     './dev/js/lg-thumbnail.js',
     './dev/js/scripts.js'])

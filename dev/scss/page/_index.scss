@@ -15,10 +15,12 @@
 
 .index-hero-container {}
 
-.index-hero .index-hero-item {
-    width: 100%!important;
-    overflow: hidden!important;
-}
+// .index-hero .index-hero-item {
+//     width: 100%!important;
+//     overflow: hidden!important;
+// }
+
+.index-hero-item { overflow: hidden; }
 
 .index-hero-text {
     position: absolute;
@@ -50,16 +52,47 @@
     }
 }
 
-.index-hero .index-hero-img {
+
+.index-hero-img {
+    width: 100%;
+
     @include breakpoint(1.5) {
         height: 300px;
         width: auto;
         display: block;
         max-width: none;
+        position: relative;
         transform: translateX(-50%);
-        margin-left: 50vw;
+        // margin-left: -50vw;
+        // margin-left: -50%;
+        left: 50%;
     }
 }
+
+/* Unslider Customs
+/* ------------------------- */
+
+.unslider { position: relative; }
+
+.unslider-nav {
+    position: absolute;
+    bottom: .5em;
+    left: 0;
+    right: 0;
+
+    ol {
+        li {
+            border: none;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+
+            &.unslider-active { background-color: $color-brand-black; }
+        }
+    }
+}
+
+
 
 /* Footer
 /* ------------------------- */
