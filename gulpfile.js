@@ -48,13 +48,13 @@ gulp.task('scss', function() {
 gulp.task('javascript', function() {
   return gulp.src([
     './dev/js/jquery.js',
-    './dev/js/unslider.js',
+    './dev/js/slick.js',
     './dev/js/lightgallery.js',
     './dev/js/lg-thumbnail.js',
     './dev/js/scripts.js'])
     .pipe(plumber())
-    .pipe(uglify())
     .pipe(concat('scripts.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('./dist/js/'))
 });
 
@@ -102,7 +102,7 @@ gulp.task('browserSync', function() {
 
   gulp.watch(['./dist/**/*.html']).on('change', reloadBrowser);
 
-  gulp.watch(['./dev/img/**/*'], function() {
+  gulp.watch(['./dev/img/*'], function() {
     runSequence('images', reloadBrowser);
   });
 

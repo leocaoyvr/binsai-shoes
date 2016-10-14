@@ -16,7 +16,9 @@
 @import 'vend/normalize';
 
 // jQuery Hero Slider
-@import 'vend/unslider.scss';
+@import 'vend/slick';
+@import 'vend/slick-theme';
+@import 'vend/slick-custom';
 
 // Light Gallery
 @import 'vend/lightgallery';

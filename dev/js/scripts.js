@@ -4,8 +4,10 @@
 
 // Homepage Hero Slider
 $(function() {
-  $('.index-hero').unslider({
+  $("#js-indexSlider").slick({
+    dots: true,
+    infinite: true,
     autoplay: true,
-    arrows: false,
+    arrows: false
   });
 });
