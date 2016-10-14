@@ -1,5 +1,12 @@
 #   Binsai Shoes Website
 
+## About Designer
+
+-   Name: Lainey Huo (&guluguluxixi)
+-   Title: Graphic Designer | UI Designer | Illustrator
+-   Email: guluguluxixi@gmail.com
+-   Website: http://www.laineyhuo.com
+
 ##  About Developer
 
 -   Name: Leo Cao (@vivianalive)
@@ -20,7 +27,7 @@
 **Tools**
 
 -   Gulp & Plugins
--   npm
+-   Sublime Text
 
 ##  Project Specs
 
@@ -28,7 +35,7 @@
 -   Breakpoints: 6
 -   Compatibilities:
     -   Latest 2 version of Chrome, Firefox, Safari
-    -   Microsoft Edge & IE 10
+    -   Microsoft Edge & IE 10, 11
 
 ##  Install & Setup
 
@@ -40,7 +47,8 @@
 **Option 2**
 
 1.  `npm install`
-2.  `gulp serve`
+2.  `gulp`
 3.  Upload the latest *dist* to server
 
+*Made with love in Vancouver, Canada.*
 
