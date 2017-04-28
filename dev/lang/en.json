@@ -1,79 +1,79 @@
 {
-    "lan": "en",
-    "title": "Binsai Shoes",
-    "nav": {
-        "home": "Home",
-        "about": "About Us",
-        "product": "Product",
-        "product_16aw": "2016 AW",
-        "product_17ss": "2017 SS",
-        "contact": "Contact Us",
-        "cgLan": {
-            "name": "中文",
-            "url": "cn"
-        }
-    },
-    "footer": {
-        "brand": "2017 Binsaishoes. All Rights Reserved."
-    },
-    "index": {
-        "head": {
-            "title": "Binsai Shoes"
-        },
-        "main": {
-            "slogan_l1": "Pretty Shoes Make",
-            "slogan_l2": "You Go Further"
-        }
-    },
-    "product": {
-        "head": {
-            "title": "Product | Binsai Shoes"
-        },
-        "main": {
-            "title": "About Development",
-            "dev_info": "During the period of development, we put more enphasis on interaction with customers in the meantime of creating new styles by ourselves. To our minds, only through intimate interaction can we creat styles much more to the taste to customers themselves,  thus can make the cooperation more smoothly and sustainably. If you have good ideas on developing shoes, do not hesitate to let us know. We can discuss with each other to make collections most suitable to you.",
-            "arrow": "See Our Shoes"
-        }
-    },
-    "about": {
-        "head": {
-            "title": "About Us | Binsai Shoes"
-        },
-        "main": {
-            "intro": {
-                "title_l": "Company",
-                "title_r": "Introduction",
-                "para_1": "Binsai Shoes has been established for 25 years with the right of handling export business. Our main product is ladies shoes and the major markets lie in European countries,the United States, Canada and Australia etc.",
-                "para_2": "It is located in Wenzhou - the Capital of Shoes in China.Our company is an integration of development, sales and production.",
-                "para_3": "We have always been focusing on the details and chosing good materials.Our company adhere to the business purposes of \"integrity management\". We are dedicated to meeting customers resonable demands."
-            },
-            "str": {
-                "title_l": "Our",
-                "title_r": "Strength",
-                "para_1_subtitle": "Reansonable Price",
-                "para_1_para": "Prices for products are in strict accordance with customers requirements，striving to the highest effective cost.",
-                "para_2_subtitle": "High Quality",
-                "para_2_para": "Products are produced definitely according to the confirmation samples with strictly controled quality during each production processes.",
-                "para_3_subtitle": "On-time Delivery",
-                "para_3_para_1": "Our company ensures on-time delivery to help eliminate customers' worries in the time of receipt, thus gain more time for customers' sales period.",
-                "para_3_para_2": "Welcome to visit our company and negotiate business. We will learn from each other and cooperate with each other to realize mutual development.",
-                "text_on_pic_1": "China Genuine",
-                "text_on_pic_2": "Leather",
-                "text_on_pic_3": "Products"
-            }
-        }
-    },
-    "contact": {
-        "head": {
-            "title": "Contact Us | Binsai Shoes"
-        },
-        "main": {
-            "title": "Contact Us",
-            "addr_l1": "ADDRESS: NO. 22 JINDA ROAD, QIANHUA INDUSTRIAL ZONE,",
-            "addr_l2": "XINQIAO, OUHAI DISTRICT, WENZHOU, CHINA.",
-            "tel": "TEL: (+86) 0577-88428709",
-            "email": "Email: info@binsaishoes.com",
-            "web": "Web: www.binsaishoes.com"
-        }
+  "lan": "en",
+  "title": "Binsai Shoes",
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "product": "Product",
+    "product_16aw": "2016 AW",
+    "product_17ss": "2017 SS",
+    "contact": "Contact Us",
+    "cgLan": {
+      "name": "中文",
+      "url": "cn"
     }
+  },
+  "footer": {
+    "brand": "2017 Binsaishoes. All Rights Reserved."
+  },
+  "index": {
+    "head": {
+      "title": "Binsai Shoes"
+    },
+    "main": {
+      "slogan_l1": "Pretty Shoes Make",
+      "slogan_l2": "You Go Further"
+    }
+  },
+  "product": {
+    "head": {
+      "title": "Product | Binsai Shoes"
+    },
+    "main": {
+      "title": "About Development",
+      "dev_info": "During the period of development, we put more enphasis on interaction with customers in the meantime of creating new styles by ourselves. To our minds, only through intimate interaction can we creat styles much more to the taste to customers themselves,  thus can make the cooperation more smoothly and sustainably. If you have good ideas on developing shoes, do not hesitate to let us know. We can discuss with each other to make collections most suitable to you.",
+      "arrow": "See Our Shoes"
+    }
+  },
+  "about": {
+    "head": {
+      "title": "About Us | Binsai Shoes"
+    },
+    "main": {
+      "intro": {
+        "title_l": "Company",
+        "title_r": "Introduction",
+        "para_1": "Binsai Shoes has been established for 25 years with the right of handling export business. Our main product is ladies shoes and the major markets lie in European countries,the United States, Canada and Australia etc.",
+        "para_2": "It is located in Wenzhou - the Capital of Shoes in China.Our company is an integration of development, sales and production.",
+        "para_3": "We have always been focusing on the details and chosing good materials.Our company adhere to the business purposes of \"integrity management\". We are dedicated to meeting customers resonable demands."
+      },
+      "str": {
+        "title_l": "Our",
+        "title_r": "Strength",
+        "para_1_subtitle": "Reansonable Price",
+        "para_1_para": "Prices for products are in strict accordance with customers requirements，striving to the highest effective cost.",
+        "para_2_subtitle": "High Quality",
+        "para_2_para": "Products are produced definitely according to the confirmation samples with strictly controled quality during each production processes.",
+        "para_3_subtitle": "On-time Delivery",
+        "para_3_para_1": "Our company ensures on-time delivery to help eliminate customers' worries in the time of receipt, thus gain more time for customers' sales period.",
+        "para_3_para_2": "Welcome to visit our company and negotiate business. We will learn from each other and cooperate with each other to realize mutual development.",
+        "text_on_pic_1": "China Genuine",
+        "text_on_pic_2": "Leather",
+        "text_on_pic_3": "Products"
+      }
+    }
+  },
+  "contact": {
+    "head": {
+      "title": "Contact Us | Binsai Shoes"
+    },
+    "main": {
+      "title": "Contact Us",
+      "addr_l1": "ADDRESS: NO. 22 JINDA ROAD, QIANHUA INDUSTRIAL ZONE,",
+      "addr_l2": "XINQIAO, OUHAI DISTRICT, WENZHOU, CHINA.",
+      "tel": "TEL: (+86) 0577-88428709",
+      "email": "Email: info@binsaishoes.com",
+      "web": "Web: www.binsaishoes.com"
+    }
+  }
 }
