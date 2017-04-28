@@ -14,9 +14,12 @@ block content
       div.product-dev-img
 
   div.product-arrow
-    p.product-arrow-text= product.main.arrow
+    //- a(name="products")
+    p.product-arrow-text
+      a.product-arrow-link(href="#products")= product.main.arrow
 
   div.pro-gallery
+    a(name="products")
     ul#product-shoes
       - for (var r = 1; r < 5; r++)
         - for (var c = 1; c < 5; c++)

@@ -101,7 +101,16 @@
 .product-arrow-text {
   font-size: 24px;
   text-align: center;
-  height: 55px;
-  background: url('/img/icn-double-arrow-down-100x40.png') bottom center no-repeat;
-  background-size: 50px 20px;
+  height: 48px;
+  background: url('/img/icn-triangle-down.svg')
+              bottom center
+              / 20px 20px
+              no-repeat;
 }
+
+.product-arrow-link {
+  color: $color-brand-black;
+  transition: color .3s linear;
+
+}
+.product-arrow-link:hover { color: $color-brand-pink; }
