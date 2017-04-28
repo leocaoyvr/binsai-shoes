@@ -108,9 +108,4 @@
               no-repeat;
 }
 
-.product-arrow-link {
-  color: $color-brand-black;
-  transition: color .3s linear;
-
-}
-.product-arrow-link:hover { color: $color-brand-pink; }
+.product-arrow-link { color: $color-brand-black; }
