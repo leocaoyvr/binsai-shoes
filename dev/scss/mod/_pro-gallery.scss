@@ -47,6 +47,9 @@
   }
 }
 
-.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
-  border-color: saturate($color-brand-pink, 10%);
+.lg-outer .lg-thumb-item.active { opacity: .8; }
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  border-color: darken($color-brand-pink, 10%);
 }
