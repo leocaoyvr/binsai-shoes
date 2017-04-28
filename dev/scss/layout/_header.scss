@@ -17,11 +17,9 @@
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+	transition: opacity .3s linear;
 
-  &:hover {
-    opacity: .75;
-    transition: opacity .3s linear;
-  }
+  &:hover { opacity: .75; }
 
   img {
     width: 100%;

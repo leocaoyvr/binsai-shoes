@@ -6,13 +6,16 @@ div.nav
       a.nav-link(href= "/" + lan + "/" + "index.html")= nav.home
     li.nav-item.has-sub
       span.nav-link.nav-product= nav.product
-      ul.nav-sub
-        li
-          a(href= "/" + lan + "/" + "product.html") 2016 AW
-        li
-          a(href= "/" + lan + "/" + "product.html") 2017 SS
+      div.nav-sub
+        ul.nav-sub-inner
+          li.nav-sub-item
+            a.nav-link(href= "/" + lan + "/" + "product.html") 2016 AW
+          li.nav-sub-item
+            a.nav-link(href= "/" + lan + "/" + "product.html") 2017 SS
 
     li.nav-item.long
       a.nav-link.nav-about(href= "/" + lan + "/" + "about.html")= nav.about
     li.nav-item.long
       a.nav-link.nav-contact(href= "/" + lan + "/" + "contact.html")= nav.contact
+
+  div.nav-sub-bg
