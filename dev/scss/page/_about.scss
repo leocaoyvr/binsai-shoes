@@ -9,56 +9,56 @@
 /* ------------------------- */
 
 .text-card {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 
-    .text {
-        box-sizing: border-box;
-        width: 50%;
-        padding: 100px 80px;
-        background-color: #fff;
+  .text {
+    box-sizing: border-box;
+    width: 50%;
+    padding: 100px 80px;
+    background-color: #fff;
 
-         @include breakpoint(2) {
-            padding-left: 10%;
-            padding-right: 10%;
-         }
+     @include breakpoint(2) {
+      padding-left: 10%;
+      padding-right: 10%;
+     }
 
-         @include breakpoint(1.5) {
-            padding-left: 6%;
-            padding-right: 6%;
-         }
+     @include breakpoint(1.5) {
+      padding-left: 6%;
+      padding-right: 6%;
+     }
 
-         @include breakpoint(1) {
-            padding-left: 8px;
-            padding-right: 8px;
-         }
+     @include breakpoint(1) {
+      padding-left: 8px;
+      padding-right: 8px;
+     }
 
-        .title {
-            @media (min-width: 800px) {
-                white-space: nowrap;
-            }
+    .title {
+      @media (min-width: 800px) {
+        white-space: nowrap;
+      }
 
-            @include breakpoint(2) {
-                margin-bottom: 60px;
+      @include breakpoint(2) {
+        margin-bottom: 60px;
 
-                &:after {
-                    left: 7px;
-                    width: 240px;
-                }
-
-                .left-half {
-                    margin-right: .25em;
-                    display: inline-block;
-                }
-            }
+        &:after {
+          left: 7px;
+          width: 240px;
         }
-    }
 
-    .img {
-        width: 50%;
-
-        img { width: 100%; }
+        .left-half {
+          margin-right: .25em;
+          display: inline-block;
+        }
+      }
     }
+  }
+
+  .img {
+    width: 50%;
+
+    img { width: 100%; }
+  }
 
 }
 
@@ -67,75 +67,75 @@
 /* ------------------------- */
 
 .text-card-1 {
-    .text {
-        right: 0;
-        top: 0;
-        position: absolute;
+  .text {
+    right: 0;
+    top: 0;
+    position: absolute;
 
-        .title {
-            @media (min-width: 800px) {
-                position: relative;
-                left: -333px;
-                margin-bottom: 90px;
+    .title {
+      @media (min-width: 800px) {
+        position: relative;
+        left: -333px;
+        margin-bottom: 90px;
 
-                @at-root .cn & { left: -186px; }
+        @at-root .cn & { left: -186px; }
 
-                &:after { display: none; }
+        &:after { display: none; }
 
-                .left-half {
-                    display: inline-block;
-                    margin-right: 10px;
-                    color: #fff;
-                }
-
-                .right-half {
-                    display: inline-block;
-                    margin-left: 5px;
-                    position: relative;
-
-                    &:after {
-                        position: absolute;
-                        content: '';
-                        display: block;
-                        background: $color-brand-black;
-                        height: 1px;
-                        width: 160px;
-                        margin-left: -5px;
-                        bottom: -7px;
-                    }
-                }
-            }
+        .left-half {
+          display: inline-block;
+          margin-right: 10px;
+          color: #fff;
         }
+
+        .right-half {
+          display: inline-block;
+          margin-left: 5px;
+          position: relative;
+
+          &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            background: $color-brand-black;
+            height: 1px;
+            width: 160px;
+            margin-left: -5px;
+            bottom: -7px;
+          }
+        }
+      }
+    }
+  }
+
+  .img {
+    width: 50%;
+    height: 750px;
+    background:
+      #68533d
+      url('../img/pic-about-1-1000x746.jpg')
+      bottom center
+      no-repeat;
+    background-size: cover;
+
+    @include breakpoint(3) {
+      height: calc(750px + (600px - 50vw) * 1.2);
+    }
+  }
+
+  @include breakpoint(2) {
+    .text {
+      width: 100%;
+      position: initial;
+      padding-top: 80px;
     }
 
     .img {
-        width: 50%;
-        height: 750px;
-        background:
-            #68533d
-            url('../img/pic-about-1-1000x746.jpg')
-            bottom center
-            no-repeat;
-        background-size: cover;
-
-        @include breakpoint(3) {
-            height: calc(750px + (600px - 50vw) * 1.2);
-        }
+      width: 100%;
+      height: calc(100vw / 1000 * 746);
     }
 
-    @include breakpoint(2) {
-        .text {
-            width: 100%;
-            position: initial;
-            padding-top: 80px;
-        }
-
-        .img {
-            width: 100%;
-            height: calc(100vw / 1000 * 746);
-        }
-
-    }
+  }
 }
 
 
@@ -146,109 +146,109 @@
 /* ------------------------- */
 
 .text-card-2 {
-    .text {
-        padding-top: 230px;
+  .text {
+    padding-top: 230px;
 
-        .title {
-            @media (min-width: 800px) {
-                position: absolute;
-                left: 50%;
-                top: 100px;
-                transform: translate(-50%, 0);
+    .title {
+      @media (min-width: 800px) {
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translate(-50%, 0);
 
-                &:after { display: none; }
+        &:after { display: none; }
 
-                .left-half {
-                    text-align: right;
-                    width: 260px;
-                    display: inline-block;
-                    margin-right: 10px;
+        .left-half {
+          text-align: right;
+          width: 260px;
+          display: inline-block;
+          margin-right: 10px;
 
-                    &:after {
-                        position: absolute;
-                        content: '';
-                        display: block;
-                        background: $color-brand-black;
-                        height: 1px;
-                        width: 102px;
-                        left: 168px;
-                        bottom: -7px;
-                    }
-                }
-
-                .right-half {
-                    width: 260px;
-                    display: inline-block;
-                    margin-left: 10px;
-                    color: #fff;
-                }
-            }
+          &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            background: $color-brand-black;
+            height: 1px;
+            width: 102px;
+            left: 168px;
+            bottom: -7px;
+          }
         }
 
-        .subtitle {
-            margin-bottom: 1em;
+        .right-half {
+          width: 260px;
+          display: inline-block;
+          margin-left: 10px;
+          color: #fff;
         }
+      }
     }
 
+    .subtitle {
+      margin-bottom: 1em;
+    }
+  }
+
+  .img {
+    float: right;
+    width: 50%;
+    height: 1000px;
+    background:
+      #68533d
+      url('../img/pic-about-2-1000x1000.jpg')
+      bottom center
+      no-repeat;
+    background-size: cover;
+
+    @include breakpoint(3) {
+      height: calc(1000px + (600px - 50vw) * 1.6);
+    }
+
+    // text on picture
+    .text-on-pic {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 55px;
+      line-height: 1.15;
+      max-width: 480px;
+      padding-left: .25em;
+      padding-right: .25em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 280px;
+
+      @include breakpoint(3) {
+        margin-top: calc(320px + (600px - 50vw) * 1.2);
+      }
+      // @include breakpoint(2) { font-size: 40px; }
+    }
+  }
+
+
+  @include breakpoint(2) {
     .img {
-        float: right;
-        width: 50%;
-        height: 1000px;
-        background:
-            #68533d
-            url('../img/pic-about-2-1000x1000.jpg')
-            bottom center
-            no-repeat;
-        background-size: cover;
+      width: 100%;
+      height: calc(100vw / 1000 * 746);
+      float: none;
+      display: table;
 
-        @include breakpoint(3) {
-            height: calc(1000px + (600px - 50vw) * 1.6);
-        }
+      .text-on-pic {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
 
-        // text on picture
-        .text-on-pic {
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 55px;
-            line-height: 1.15;
-            max-width: 480px;
-            padding-left: .25em;
-            padding-right: .25em;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 280px;
-
-            @include breakpoint(3) {
-                margin-top: calc(320px + (600px - 50vw) * 1.2);
-            }
-            // @include breakpoint(2) { font-size: 40px; }
-        }
+        @include breakpoint(1.5) { font-size: 8vw; }
+        @include breakpoint(1) { font-size: 9vw; }
+      }
     }
 
-
-    @include breakpoint(2) {
-        .img {
-            width: 100%;
-            height: calc(100vw / 1000 * 746);
-            float: none;
-            display: table;
-
-            .text-on-pic {
-                display: table-cell;
-                text-align: center;
-                vertical-align: middle;
-
-                @include breakpoint(1.5) { font-size: 8vw; }
-                @include breakpoint(1) { font-size: 9vw; }
-            }
-        }
-
-        .text {
-            width: 100%;
-            position: initial;
-            padding-top: 80px;
-        }
-
-        .mt3d5em { margin-top: 2em; }
+    .text {
+      width: 100%;
+      position: initial;
+      padding-top: 80px;
     }
+
+    .mt3d5em { margin-top: 2em; }
+  }
 }

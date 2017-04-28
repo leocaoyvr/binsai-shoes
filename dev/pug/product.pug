@@ -1,48 +1,48 @@
 extends layout/default.pug
 
 block head
-    title= product.head.title
+  title= product.head.title
 
-    - var pageClass = "product"
+  - var pageClass = "product"
 
 block content
-    div.product-dev
-        div.container
-            div.product-dev-text
-                h1.title= product.main.title
-                p.dev_info.text= product.main.dev_info
-            div.product-dev-img
+  div.product-dev
+    div.container
+      div.product-dev-text
+        h1.title= product.main.title
+        p.dev_info.text= product.main.dev_info
+      div.product-dev-img
 
-    div.product-arrow
-        p.product-arrow-text= product.main.arrow
+  div.product-arrow
+    p.product-arrow-text= product.main.arrow
 
-    div.pro-gallery
-        ul#product-shoes
-            - for (var r = 1; r < 5; r++)
-                - for (var c = 1; c < 5; c++)
-                    li(data-src="/img/pro-l/pic-shoe-" + r + "-" + c + ".jpg")
-                        img(src="/img/pro-s/pic-shoe-" + r + "-" + c + ".jpg")
-            li(data-src="/img/pro-l/pic-shoe-5-1.jpg")
-                img(src="/img/pro-s/pic-shoe-5-1.jpg")
+  div.pro-gallery
+    ul#product-shoes
+      - for (var r = 1; r < 5; r++)
+        - for (var c = 1; c < 5; c++)
+          li(data-src="/img/pro-l/pic-shoe-" + r + "-" + c + ".jpg")
+            img(src="/img/pro-s/pic-shoe-" + r + "-" + c + ".jpg")
+      li(data-src="/img/pro-l/pic-shoe-5-1.jpg")
+        img(src="/img/pro-s/pic-shoe-5-1.jpg")
 
-        ul#product-boots
-            - for (var r = 1; r < 3; r++)
-                - for (var c = 1; c < 3; c++)
-                    li(data-src="/img/pro-l/pic-boot-" + r + "-" + c + ".jpg")
-                        img(src="/img/pro-s/pic-boot-" + r + "-" + c + ".jpg")
-            li(data-src="/img/pro-l/pic-boot-3-1.jpg")
-                img(src="/img/pro-s/pic-boot-3-1.jpg")
-
-
+    ul#product-boots
+      - for (var r = 1; r < 3; r++)
+        - for (var c = 1; c < 3; c++)
+          li(data-src="/img/pro-l/pic-boot-" + r + "-" + c + ".jpg")
+            img(src="/img/pro-s/pic-boot-" + r + "-" + c + ".jpg")
+      li(data-src="/img/pro-l/pic-boot-3-1.jpg")
+        img(src="/img/pro-s/pic-boot-3-1.jpg")
 
 
-    script.
-        $(document).ready(function() {
-            $("#product-shoes").lightGallery({
-                thumbnail:true
-            });
 
-            $("#product-boots").lightGallery({
-                thumbnail:true
-            });
-        });
+
+  script.
+    $(document).ready(function() {
+      $("#product-shoes").lightGallery({
+        thumbnail:true
+      });
+
+      $("#product-boots").lightGallery({
+        thumbnail:true
+      });
+    });

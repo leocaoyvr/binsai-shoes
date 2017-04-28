@@ -6,74 +6,74 @@
 /* ------------------------- */
 
 @font-face {
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    src:    local('Quicksand Regular'),
-            local('Quicksand-Regular'),
-            url('../font/Quicksand-Regular.woff') format('woff'),
-            url('../font/Quicksand-Regular.woff2') format('woff2');
-    unicode-range:  U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
-                    U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'),
+       local('Quicksand-Regular'),
+       url('../font/Quicksand-Regular.woff') format('woff'),
+       url('../font/Quicksand-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
+          			 U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 300;
-    src:    local('Raleway Light'),
-            local('Raleway-Light'),
-            url('../font/Raleway-Light.woff') format('woff'),
-            url('../font/Raleway-Light.woff2') format('woff2');
-    unicode-range:  U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
-                    U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'),
+       local('Raleway-Light'),
+       url('../font/Raleway-Light.woff') format('woff'),
+       url('../font/Raleway-Light.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
+          			 U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    src:    local('Raleway'),
-            local('Raleway-Regular'),
-            url('../font/Raleway-Regular.woff') format('woff'),
-            url('../font/Raleway-Regular.woff2') format('woff2');
-    unicode-range:  U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
-                    U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'),
+       local('Raleway-Regular'),
+       url('../font/Raleway-Regular.woff') format('woff'),
+       url('../font/Raleway-Regular.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
+          			 U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    src:    local('Raleway Bold'),
-            local('Raleway-Bold'),
-            url('../font/Raleway-Bold.woff') format('woff'),
-            url('../font/Raleway-Bold.woff2') format('woff2');
-    unicode-range:  U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
-                    U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Raleway Bold'),
+       local('Raleway-Bold'),
+       url('../font/Raleway-Bold.woff') format('woff'),
+       url('../font/Raleway-Bold.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F,
+          			 U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 
 /* Base
 /* ------------------------- */
 
-$font-family-raleway:   "Raleway", Helvetica, Arial,
-                        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+$font-family-raleway: "Raleway", Helvetica, Arial,
+           					  "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 
-$font-family-quicksand:  "Quicksand", Helvetica, Arial,
-                        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+$font-family-quicksand: "Quicksand", Helvetica, Arial,
+            					 "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 
 body {
-    font-family: $font-family-raleway;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 400;
-    color: $color-brand-black;
-    background-color: #fff;
+  font-family: $font-family-raleway;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $color-brand-black;
+  background-color: #fff;
 
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Heading
@@ -81,20 +81,20 @@ body {
 
 h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 h1, .h1 {
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 1.1;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.1;
 }
 
 h2, .h2 {
-    font-size: 24px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: $color-brand-pink;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $color-brand-pink;
 }
 
 
@@ -102,31 +102,31 @@ h2, .h2 {
 /* ------------------------- */
 
 .title {
-    @import 'util/mixins';
+  @import 'util/mixins';
 
-    font-weight: 300;
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
 
-    &:after {
-        position: absolute;
-        content: '';
-        display: block;
-        background: $color-brand-black;
-        height: 1px;
-        width: 100%;
-        bottom: -7px;
-    }
+  &:after {
+    position: absolute;
+    content: '';
+    display: block;
+    background: $color-brand-black;
+    height: 1px;
+    width: 100%;
+    bottom: -7px;
+  }
 
-    @include breakpoint(2) { font-size: 38px; }
+  @include breakpoint(2) { font-size: 38px; }
 }
 
 /* Text
 /* ------------------------- */
 
 .text {
-    font-family: $font-family-quicksand;
-    font-weight: 400;
-    line-height: 30px;
+  font-family: $font-family-quicksand;
+  font-weight: 400;
+  line-height: 30px;
 }

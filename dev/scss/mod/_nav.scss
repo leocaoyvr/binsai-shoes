@@ -6,52 +6,52 @@
 /* ------------------------- */
 
 .nav {
-    background-color: #000;
+  background-color: #000;
 }
 
 .nav-inner {
-    font-size: 0;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+  font-size: 0;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-item {
-    display: inline-block;
-    width: 25%;
+  display: inline-block;
+  width: 25%;
 
-    @include breakpoint(1.5) {
-        width: 20%;
+  @include breakpoint(1.5) {
+    width: 20%;
 
-        &.long { width: 30%; }
-    }
+    &.long { width: 30%; }
+  }
 }
 
 .nav-link {
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    color: #fff;
-    font-family: $font-family-quicksand;
-    font-weight: 700;
-    font-size: 14px;
-    transition: background-color .3s linear;
-    white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #fff;
+  font-family: $font-family-quicksand;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background-color .3s linear;
+  white-space: nowrap;
 
-    &:hover { background-color: $color-brand-pink; }
+  &:hover { background-color: $color-brand-pink; }
 
-    @include breakpoint(0.9) {
-        @at-root .en & {
-            font-size: 11px;
-            letter-spacing: -.15em;
-        }
-
-        @at-root .cn & {
-            font-size: 13px;
-        }
+  @include breakpoint(0.9) {
+    @at-root .en & {
+      font-size: 11px;
+      letter-spacing: -.15em;
     }
+
+    @at-root .cn & {
+      font-size: 13px;
+    }
+  }
 }
 
 
@@ -61,5 +61,5 @@
 .nav .has-sub { position: relative; }
 
 .nav-sub {
-    position: absolute;
+  position: absolute;
 }

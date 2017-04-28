@@ -6,82 +6,82 @@
 /* ------------------------- */
 
 .index-hero {
-    height: calc(100vw / 1600 * 750);
-    max-height: 750px;
+  height: calc(100vw / 1600 * 750);
+  max-height: 750px;
 
-    @include breakpoint(1.5) { height: 300px; }
+  @include breakpoint(1.5) { height: 300px; }
 }
 
 .index-hero-container {}
 
 .index-hero-item {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .index-hero-text {
-    position: absolute;
-    text-align: center;
-    right: 6%;
-    top: 26%;
-    z-index: 1;
+  position: absolute;
+  text-align: center;
+  right: 6%;
+  top: 26%;
+  z-index: 1;
 
-    @include breakpoint(2) {
-        left: 0;
-        right: 0;
-        top: 50%;
-        transform: translateY(calc(-50% - 10px));
-        background: rgba(255, 255, 255, .7);
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: .5em;
-    }
+  @include breakpoint(2) {
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(calc(-50% - 10px));
+    background: rgba(255, 255, 255, .7);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .5em;
+  }
 
-    @include breakpoint(1.5) {
-        font-size: 8vw;
-        width: calc(100vw - 1.5em);
-    }
+  @include breakpoint(1.5) {
+    font-size: 8vw;
+    width: calc(100vw - 1.5em);
+  }
 
-    @include breakpoint(1) {
-        padding: 1em .2em;
-        font-size: 9vw;
-    }
+  @include breakpoint(1) {
+    padding: 1em .2em;
+    font-size: 9vw;
+  }
 }
 
 
 .index-hero-img {
-    width: 100%;
+  width: 100%;
 
-    @include breakpoint(1.5) {
-        height: 300px;
-        width: auto!important;
-        display: block;
-        max-width: none;
-        position: relative;
-        transform: translateX(-50%);
-        left: 50%;
-    }
+  @include breakpoint(1.5) {
+    height: 300px;
+    width: auto!important;
+    display: block;
+    max-width: none;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
 
 .index-hero .slick-dots {
-    bottom: 16px;
+  bottom: 16px;
 
-    li {
+  li {
+    width: 10px;
+    height: 10px;
+
+    button {
+      width: 10px;
+      height: 10px;
+
+      &:before {
         width: 10px;
         height: 10px;
-
-        button {
-            width: 10px;
-            height: 10px;
-
-            &:before {
-                width: 10px;
-                height: 10px;
-                line-height: 10px;
-            }
-        }
+        line-height: 10px;
+      }
     }
+  }
 }
 
 
@@ -89,6 +89,6 @@
 /* ------------------------- */
 
 .index .footer {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

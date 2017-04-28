@@ -1,39 +1,39 @@
 extends layout/default.pug
 
 block head
-    title= about.head.title
+  title= about.head.title
 
-    - var pageClass = "about"
+  - var pageClass = "about"
 
 block content
-    div.text-card.text-card-1
-        div.img
-            //- img(src="../img/pic-about-1-1000x746.jpg")
-        div.text
-            h1.title
-                span.left-half= about.main.intro.title_l
-                span.right-half= about.main.intro.title_r
-            p.para= about.main.intro.para_1
-            p.para.mt1d5em= about.main.intro.para_2
-            p.para= about.main.intro.para_3
+  div.text-card.text-card-1
+    div.img
+      //- img(src="../img/pic-about-1-1000x746.jpg")
+    div.text
+      h1.title
+        span.left-half= about.main.intro.title_l
+        span.right-half= about.main.intro.title_r
+      p.para= about.main.intro.para_1
+      p.para.mt1d5em= about.main.intro.para_2
+      p.para= about.main.intro.para_3
 
-    div.text-card.text-card-2
-        div.img
-            p.text-on-pic
-                span= about.main.str.text_on_pic_1
-                br
-                span= about.main.str.text_on_pic_2
-                br
-                span= about.main.str.text_on_pic_3
-            //- img(src="../img/pic-about-2-1000x1000.jpg")
-        div.text
-            h1.title
-                span.left-half= about.main.str.title_l
-                span.right-half= about.main.str.title_r
-            h2.subtitle= about.main.str.para_1_subtitle
-            p.para= about.main.str.para_1_para
-            h2.subtitle.mt3d5em= about.main.str.para_2_subtitle
-            p.para= about.main.str.para_2_para
-            h2.subtitle.mt3d5em= about.main.str.para_3_subtitle
-            p.para= about.main.str.para_3_para_1
-            p.para.mt1d5em= about.main.str.para_3_para_2
+  div.text-card.text-card-2
+    div.img
+      p.text-on-pic
+        span= about.main.str.text_on_pic_1
+        br
+        span= about.main.str.text_on_pic_2
+        br
+        span= about.main.str.text_on_pic_3
+      //- img(src="../img/pic-about-2-1000x1000.jpg")
+    div.text
+      h1.title
+        span.left-half= about.main.str.title_l
+        span.right-half= about.main.str.title_r
+      h2.subtitle= about.main.str.para_1_subtitle
+      p.para= about.main.str.para_1_para
+      h2.subtitle.mt3d5em= about.main.str.para_2_subtitle
+      p.para= about.main.str.para_2_para
+      h2.subtitle.mt3d5em= about.main.str.para_3_subtitle
+      p.para= about.main.str.para_3_para_1
+      p.para.mt1d5em= about.main.str.para_3_para_2
