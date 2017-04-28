@@ -2,51 +2,64 @@
 /* Navigation
 /* ========================= */
 
+/* 1st Level
+/* ------------------------- */
+
 .nav {
     background-color: #000;
+}
 
-    ul {
-        font-size: 0;
-        max-width: 960px;
-        margin-left: auto;
-        margin-right: auto;
+.nav-inner {
+    font-size: 0;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-item {
+    display: inline-block;
+    width: 25%;
+
+    @include breakpoint(1.5) {
+        width: 20%;
+
+        &.long { width: 30%; }
     }
+}
 
-    li {
-        display: inline-block;
-        width: 25%;
+.nav-link {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #fff;
+    font-family: $font-family-quicksand;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color .3s linear;
+    white-space: nowrap;
 
-        @include breakpoint(1.5) {
-            width: 20%;
+    &:hover { background-color: $color-brand-pink; }
 
-            &.long { width: 30%; }
+    @include breakpoint(0.9) {
+        @at-root .en & {
+            font-size: 11px;
+            letter-spacing: -.15em;
+        }
+
+        @at-root .cn & {
+            font-size: 13px;
         }
     }
+}
 
-    a {
-        text-align: center;
-        text-transform: uppercase;
-        display: block;
-        padding-top: 12px;
-        padding-bottom: 12px;
-        color: #fff;
-        font-family: $font-family-quicksand;
-        font-weight: 700;
-        font-size: 14px;
-        transition: background-color .3s linear;
-        white-space: nowrap;
 
-        &:hover { background-color: $color-brand-pink; }
+/* Sub Menu
+/* ------------------------- */
 
-        @include breakpoint(0.9) {
-            @at-root .en & {
-                font-size: 11px;
-                letter-spacing: -.15em;
-            }
+.nav .has-sub { position: relative; }
 
-            @at-root .cn & {
-                font-size: 13px;
-            }
-        }
-    }
+.nav-sub {
+    position: absolute;
 }

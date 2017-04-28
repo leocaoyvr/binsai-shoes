@@ -1,16 +1,18 @@
 //- Navigation
 
 div.nav
-    ul
-        li
-            a(href= "/" + lan + "/" + "index.html")
-                span= nav.home
-        li
-            a(href= "/" + lan + "/" + "product.html").nav-product
-                span= nav.product
-        li.long
-            a(href= "/" + lan + "/" + "about.html").nav-about
-                span= nav.about
-        li.long
-            a(href= "/" + lan + "/" + "contact.html").nav-contact
-                span= nav.contact
+    ul.nav-inner
+        li.nav-item
+            a.nav-link(href= "/" + lan + "/" + "index.html")= nav.home
+        li.nav-item.has-sub
+            span.nav-link.nav-product= nav.product
+            ul.nav-sub
+                li
+                    a(href= "/" + lan + "/" + "product.html")= 2016 AW
+                li
+                    a(href= "/" + lan + "/" + "product.html")= 2017 SS
+
+        li.nav-item.long
+            a.nav-link.nav-about(href= "/" + lan + "/" + "about.html")= nav.about
+        li.nav-item.long
+            a.nav-link.nav-contact(href= "/" + lan + "/" + "contact.html")= nav.contact
