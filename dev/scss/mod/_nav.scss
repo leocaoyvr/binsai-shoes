@@ -86,13 +86,17 @@
 
   display: none;
   position: absolute;
-  width: 200%;
-  min-width: 200px;
+  width: 300%;
   left: -50%;
   z-index: 2;
 
   &.active {
     display: block;
+  }
+
+  @media (max-width: 800px) {
+    width: 100vw;
+    left: -100%;
   }
 }
 
@@ -103,7 +107,7 @@
 }
 
 .nav-sub-item {
-  width: 50%;
+  width: 33.33%;
   display: table-cell;
 }
 
