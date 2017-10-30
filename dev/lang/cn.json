@@ -5,8 +5,8 @@
     "home": "首页",
     "about": "关于我们",
     "product": "产品",
-    "product_16aw": "2017秋冬",
-    "product_17ss": "2018夏天",
+    "product_17aw": "2017秋冬",
+    "product_18ss": "2018春夏",
     "product_18aw": "2018秋冬",
     "contact": "联系我们",
     "cgLan": {
@@ -76,6 +76,17 @@
       "email": "邮箱： info@binsaishoes.com",
       "web": "网址: www.binsaishoes.com"
     }
+  },
+  "product_17aw": {
+    "head": {
+      "title": "2017 秋冬 | 宾赛鞋业"
+    }
+  },
+  "product_18ss": {
+    "head": {
+      "title": "2018 春夏 | 宾赛鞋业"
+    }
+  },
   "product_18aw": {
     "head": {
       "title": "2018 秋冬| 宾赛鞋业"

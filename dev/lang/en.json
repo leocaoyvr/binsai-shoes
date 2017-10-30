@@ -5,8 +5,8 @@
     "home": "Home",
     "about": "About Us",
     "product": "Product",
-    "product_16aw": "2017 AW",
-    "product_17ss": "2018 SS",
+    "product_17aw": "2017 AW",
+    "product_18ss": "2018 SS",
     "product_18aw": "2018 AW",
     "contact": "Contact Us",
     "cgLan": {
@@ -76,6 +76,17 @@
       "email": "Email: info@binsaishoes.com",
       "web": "Web: www.binsaishoes.com"
     }
+  },
+  "product_17aw": {
+    "head": {
+      "title": "2017 Autumn & Winter | Binsai Shoes"
+    }
+  },
+  "product_18ss": {
+    "head": {
+      "title": "2018 Spring & Summer | Binsai Shoes"
+    }
+  },
   "product_18aw": {
     "head": {
       "title": "2018 Autumn & Winter | Binsai Shoes"
