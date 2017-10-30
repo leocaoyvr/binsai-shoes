@@ -7,6 +7,7 @@
     "product": "产品",
     "product_16aw": "2017秋冬",
     "product_17ss": "2018夏天",
+    "product_18aw": "2018秋冬",
     "contact": "联系我们",
     "cgLan": {
       "name": "English",
@@ -74,6 +75,10 @@
       "tel": "电话： (+86) 0577-88428709",
       "email": "邮箱： info@binsaishoes.com",
       "web": "网址: www.binsaishoes.com"
+    }
+  "product_18aw": {
+    "head": {
+      "title": "2018 秋冬| 宾赛鞋业"
     }
   }
 }

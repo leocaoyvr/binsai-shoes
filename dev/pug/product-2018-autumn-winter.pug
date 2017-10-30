@@ -1,0 +1,36 @@
+extends layout/default.pug
+
+block head
+  title= product_18aw.head.title
+
+  - var pageClass = "product"
+
+block content
+  div.product-dev
+    div.container
+      div.product-dev-text
+        h1.title= product.main.title
+        p.dev_info.text= product.main.dev_info
+      div.product-dev-img
+
+  div.product-arrow
+    p.product-arrow-text
+      a.product-arrow-link(href="#products")= product.main.arrow
+
+  div.pro-gallery.mt1d5em
+    a(name="products")
+    ul#product-shoes
+      - for (var i = 1; i < 6; i++)
+          li(data-src="/img/pro-l/pic-18aw-" + i + ".jpg")
+            img(src="/img/pro-s/pic-18aw-" + i + ".jpg")
+
+  script.
+    $(document).ready(function() {
+      $("#product-shoes").lightGallery({
+        thumbnail:true
+      });
+
+      $("#product-boots").lightGallery({
+        thumbnail:true
+      });
+    });

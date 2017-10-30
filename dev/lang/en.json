@@ -7,6 +7,7 @@
     "product": "Product",
     "product_16aw": "2017 AW",
     "product_17ss": "2018 SS",
+    "product_18aw": "2018 AW",
     "contact": "Contact Us",
     "cgLan": {
       "name": "中文",
@@ -74,6 +75,10 @@
       "tel": "TEL: (+86) 0577-88428709",
       "email": "Email: info@binsaishoes.com",
       "web": "Web: www.binsaishoes.com"
+    }
+  "product_18aw": {
+    "head": {
+      "title": "2018 Autumn & Winter | Binsai Shoes"
     }
   }
 }
